@@ -15,7 +15,8 @@
 				"cqh.surround-python",
 				"gruntfuggly.todo-tree",
 				"eamodio.gitlens",
-				"charliermarsh.ruff"
+				"charliermarsh.ruff",
+				"tamasfe.even-better-toml"
 			]
 		}
 	}
