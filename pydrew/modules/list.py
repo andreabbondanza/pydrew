@@ -81,7 +81,7 @@ class List(Generic[T]):
 
     def concat(self, list_: PyList[T] | "List[T]") -> "List[T]":
         """
-        Concatenates the given list with the current list and returns a new list. 
+        Concatenates the given list with the current list and returns a new list.
 
         Parameters:
         - list_ (PyList[T] | 'List[T]'): The list to be concatenated with the current list.
@@ -229,7 +229,9 @@ class List(Generic[T]):
         sorted_list = sorted(self._data, key=func, reverse=reverse)
         return List(sorted_list)
 
-    def group_by(self, property: str, as_list: bool = True) -> Dictionary[Any, 'List[T]']:
+    def group_by(
+            self, property: str, as_list: bool = True
+    ) -> Dictionary[Any, "List[T]"]:
         """
         Groups the items in the list based on a given function.
 
@@ -258,7 +260,9 @@ class List(Generic[T]):
             grouped[key].add(item)
         return grouped
 
-    def group_by_func(self, func: Callable[[T], Any], as_list: bool = True) -> Dictionary[Any, 'List[T]']:
+    def group_by_func(
+            self, func: Callable[[T], Any], as_list: bool = True
+    ) -> Dictionary[Any, "List[T]"]:
         """
         Groups the items in the list based on a given function.
 
