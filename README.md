@@ -1,3 +1,7 @@
+# ⚠️ ABANDONED PROJECT
+
+This was a test project for python, now is abandoned.
+
 # pydrew
 A set of tool for python projects
 
